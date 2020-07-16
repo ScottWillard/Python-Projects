@@ -5,11 +5,11 @@ import random
 
 my_turtle = turtle.Turtle()
 my_turtle.speed(9999999999999999)
-colors = ["bright red", "DeepPink3", "light orange", "lime green", "cyan2", "DarkOrchid1", "bisque"]
+colors = ["red", "DeepPink3", "orange", "lime green", "cyan2", "DarkOrchid1", "bisque"]
 a = 30.14159
 
 
-def drawArt(d , angle, x, y):
+def drawArt(d, angle, x, y):
     bgcolor(random.choice(colors))
     my_turtle.up()
     my_turtle.goto(x, y)
@@ -27,5 +27,3 @@ def drawArt(d , angle, x, y):
 while a < 360:
     drawArt(15, a, 0, 0)
     a += 1
-
-
